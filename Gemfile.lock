@@ -1,0 +1,16 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    require_all (1.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  require_all
+
+RUBY VERSION
+   ruby 2.4.1p111
+
+BUNDLED WITH
+   1.14.6
