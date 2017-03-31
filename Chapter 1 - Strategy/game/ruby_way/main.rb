@@ -9,6 +9,6 @@ king.fight
 queen = Queen.new
 queen.fight
 troll = Troll.new
-
-king.weapon= Axe.new
+troll.fight
+king.weapon = Axe.new
 king.fight
