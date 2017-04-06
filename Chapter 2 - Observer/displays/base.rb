@@ -1,13 +1,12 @@
 module Displays
   class Base
-    def initialize weather_data
-      @weather_data = weather_data
-      @weather_data.add_abserver(self)
-      @temperature = @weather_data.temperature
+    def initialize weather
+      @weather = weather
+      @weather.add_abserver(self)
     end
 
-    def update(args)
-      @temperature = args[:temperature]
+    def update(weather)
+      @weather = weather
       display
     end
 

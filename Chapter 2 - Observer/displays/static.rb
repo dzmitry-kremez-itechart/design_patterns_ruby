@@ -3,7 +3,7 @@ module Displays
     def display
       msg = <<~DISPLAY
         --- Static Screen: ----
-        Temperature: #{@temperature}
+        Temperature: #{@weather.temperature}
         ---------------------------
       DISPLAY
       puts msg

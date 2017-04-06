@@ -1,12 +1,12 @@
 require 'require_all'
-require_relative './weather_data'
+require_relative './weather'
 autoload_all File.dirname(__FILE__) + '/displays'
 
-weather_data = WeatherData.new(10)
-hot_display = Displays::Hot.new(weather_data)
-static_display = Displays::Static.new(weather_data)
+weather = Weather.new(10)
+hot_display = Displays::Hot.new(weather)
+static_display = Displays::Static.new(weather)
 
-weather_data.temperature = 40
-weather_data.temperature = 15
-weather_data.remove_observer(hot_display)
-weather_data.temperature = 40
+weather.temperature = 40
+weather.temperature = 15
+# weather.remove_observer(hot_display)
+weather.temperature = 40
